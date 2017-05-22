@@ -17,6 +17,7 @@ gem 'high_voltage', '~> 3.0.0'
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'pry'
 end
 
 group :development do
@@ -29,8 +30,7 @@ group :development do
 end
 
 group :test do
-  gem 'shoulda-matchers'
-  gem 'pry'
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
